@@ -1,2 +1,70 @@
-input { width: 40px; margin: 4px; }
-button { margin: 10px 0; padding: 6px 12px; }
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f7f8;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(15, 30px);
+  grid-template-rows: repeat(15, 30px);
+  gap: 2px;
+  margin: 0 auto 20px;
+  max-width: 480px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.cell.you {
+  background-color: #84e1ff;
+  font-weight: bold;
+}
+
+.cell.opp {
+  background-color: #ffb3b3;
+  font-weight: bold;
+}
+
+.cell.safe {
+  border: 2px solid green;
+}
+
+.controls {
+  text-align: center;
+}
+
+input {
+  width: 50px;
+  margin: 5px;
+}
+
+button {
+  margin: 10px;
+  padding: 6px 12px;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.suggestion {
+  margin-top: 10px;
+  font-size: 16px;
+}
